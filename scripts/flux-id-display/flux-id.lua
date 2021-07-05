@@ -1,15 +1,16 @@
+function FluxCoords()
+    SetTextScale(0.5, 0.5)
+    SetTextEntry("string")
+    AddTextComponentString("~r~ID:~r~  ".. GetPlayerServerId(NetworkGetEntityOwner(GetPlayerPed(-1))) .. '')
+    SetTextFont(4)
+    SetTextColour(0, 0, 0, 255)
+    DrawText(0.517 - 1.0/2, 1.270 - 1.0/2)
+end
+
+
 Citizen.CreateThread(function()
     while true do
-    FluxCoords(0.517, 1.270, 1.0,1.0,0.50, "~g~Your ID:~w~  ".. GetPlayerServerId(NetworkGetEntityOwner(GetPlayerPed(-1))) .. '', 255, 255, 255, 255)
-    Citizen.Wait(0)
+        FluxCoords()
+        Citizen.Wait(10)
     end
 end)
-
-function FluxCoords(c1, c2, widthValue, heightValue, proportions, textDisplay, r,g,b,a)
-SetTextScale(proportions, proportions)
-SetTextEntry("string")
-AddTextComponentString(textDisplay)
-SetTextFont(4) -- There are 8 fonts available, ranging from 1-8
-SetTextColour(0, 0, 0, 255) -- This is calculated in RGBA, which means it supports RGB and Alpha colors.
-DrawText(c1 - widthValue/2, c2 - heightValue/2)
-end
