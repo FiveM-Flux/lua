@@ -1,8 +1,10 @@
 Citizen.CreateThread(function()
-    while Citizen.Wait(30) do
+    while true do
+        Citizen.Wait(30)
 	local ped = PlayerPedId()
         if IsPedArmed(ped, 6) then
 	    DisableControlAction(1, 140, true) -- This is the button R, it disables whipping using R
+	    -- DisableControlAction(1, 141, true) -- This is the button Q, it disables whipping using heavy weapons with Q
             DisableControlAction(1, 142, true) -- This is LMB, it disables whipping using the left mouse button
         end
     end
