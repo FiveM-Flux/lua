@@ -1,0 +1,12 @@
+-- This file is critical for making the script function. If you change any file names the script will not work unless you correct it.
+fx_version 'cerulean'
+games { 'gta5' }
+
+author '@cartWith5Wheels at https://github.com/FiveM-Flux'
+description 'Functional Lua script which disables pistol whipping (hitting someone with a weapon resulting in insta-kill).'
+version '1.0.0' -- Not important.
+
+-- If you want to run more files, you can add lines here separated by commas and line breaks.
+client_scripts {
+    'flux-antipistolwhip.lua'
+}
