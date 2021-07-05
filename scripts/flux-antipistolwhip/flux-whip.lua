@@ -1,6 +1,6 @@
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(10)
+        Citizen.Wait(30)
 	local ped = PlayerPedId()
         if IsPedArmed(ped, 6) then
 	    DisableControlAction(1, 140, true) -- This is the button R, it disables whipping using R
