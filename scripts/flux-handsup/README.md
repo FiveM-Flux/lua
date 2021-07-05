@@ -7,7 +7,7 @@ You can walk, jog and run while holding your hands up.
 This script is a Drag & Drop script meaning you don't have to do any further configuration to make it work!
 ## Instructions:
 1. Download the master file
-2. Add the scropt to your resources folder
+2. Add the script to your resources folder
 3. Start the script in your server.cfg
 
 Assuming the resource's name is original, this is what you'd add to your server.cfg file:
