@@ -1,4 +1,4 @@
-# scripts/handsup
+# scripts/flux-handsup
 This is a Standalone Script for any type of FiveM server.
 This code lets you put your hands up above your head for roleplay or other measures. The default keybind is ALT, it is however changeable in the client.lua file.
 You can walk, jog and run while holding your hands up.
