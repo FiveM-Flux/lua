@@ -11,8 +11,7 @@ end
 
 
 Citizen.CreateThread(function()
-    while true do
+    while Citizen.Wait(0) do
         FluxCoords()
-        Citizen.Wait(0)
     end
 end)
