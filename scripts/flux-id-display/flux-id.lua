@@ -1,6 +1,6 @@
 Citizen.CreateThread(function()
     while true do
-    FluxCoords(0.517, 1.270, 1.0,1.0,0.50, "~r~ID:~r~  ".. GetPlayerServerId(NetworkGetEntityOwner(GetPlayerPed(-1))) .. '', 255, 255, 255, 255)
+    FluxCoords(0.517, 1.270, 1.0,1.0,0.50, "~g~Your ID:~w~  ".. GetPlayerServerId(NetworkGetEntityOwner(GetPlayerPed(-1))) .. '', 255, 255, 255, 255)
     Citizen.Wait(0)
     end
 end)
