@@ -12,7 +12,7 @@ This script is a Drag & Drop script meaning you don't have to do any further con
 
 Assuming the resource's name is original, this is what you'd add to your server.cfg file:
 ```
-start flux-id-display
+start flux-id
 ```
 
 # Copyright
