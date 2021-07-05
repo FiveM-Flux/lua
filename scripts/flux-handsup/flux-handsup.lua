@@ -11,7 +11,7 @@ Citizen.CreateThread(function()
     end
     local handsup = false
     while true do
-        Citizen.Wait(0)
+        Citizen.Wait(50)
 	if IsControlJustPressed(1, 19) then -- Want to change the keybind? Find the fitting one on https://docs.fivem.net/docs/game-references/controls/
             if not handsup then
                 TaskPlayAnim(GetPlayerPed(-1), dict, "handsup_enter", 8.0, 8.0, -1, 50, 0, false, false, false)
